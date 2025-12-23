@@ -11,6 +11,10 @@ class GameViewModel : ViewModel() {
     }
 
     private val _uiState = MutableStateFlow(GameUiState())
+    val uiState: StateFlow<GameUiState>
+        get() {
+            TODO()
+        }
 
     private lateinit var currentWord: String
     // Set of words used in the game
