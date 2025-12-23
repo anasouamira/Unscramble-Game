@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.anasouamira.unscramblegame.data.allWords
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 
 class GameViewModel : ViewModel() {
     init {
@@ -11,10 +12,7 @@ class GameViewModel : ViewModel() {
     }
 
     private val _uiState = MutableStateFlow(GameUiState())
-    val uiState: StateFlow<GameUiState>
-        get() {
-            TODO()
-        }
+    val uiState: StateFlow<GameUiState> = _uiState.asStateFlow()
 
     private lateinit var currentWord: String
     // Set of words used in the game

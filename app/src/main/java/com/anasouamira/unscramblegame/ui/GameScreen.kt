@@ -143,7 +143,7 @@ fun GameLayout(
                 color = colorScheme.onPrimary
             )
             Text(
-                text = "scrambleun",
+                text = currentScrambledWord,
                 style = typography.displayMedium
             )
             Text(
