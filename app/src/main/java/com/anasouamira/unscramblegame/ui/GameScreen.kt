@@ -239,5 +239,6 @@ private fun FinalScoreDialog(
 fun GameScreenPreview() {
     UnscrambleTheme {
         GameScreen()
+
     }
 }
