@@ -236,9 +236,8 @@ private fun FinalScoreDialog(
 
 @Preview(showBackground = true)
 @Composable
-fun GameScreenPreview() {
+fun GameScreenPreview(){
     UnscrambleTheme {
         GameScreen()
-
     }
 }
