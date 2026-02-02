@@ -46,7 +46,6 @@ class GameViewModel : ViewModel() {
     fun updateUserGuess(guessedWord: String){
         userGuess = guessedWord
     }
-
     /*
      * Checks if the user's guess is correct.
      * Increases the score accordingly.
